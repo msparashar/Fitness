@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FITZONE – Transform Your Body, Transform Your Life. Premium gym with expert trainers, workout programs and flexible memberships.">
+  <title>FITZONE – Transform Your Body, Transform Your Life</title>
+
+  <!-- Poppins font (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ SVG ICON SPRITE (reused for social icons) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="ic-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+      <symbol id="ic-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+      <symbol id="ic-twitter" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></symbol>
+      <symbol id="ic-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ 1. NAVIGATION BAR (sticky) ============ -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a href="#home" class="logo">FIT<span>ZONE</span></a>
+
+      <!-- CSS-only mobile menu toggle (checkbox hack, no JavaScript) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="hamburger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#trainers">Trainers</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#membership" class="btn btn-primary btn-sm">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ 2. HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Welcome to FITZONE</p>
+        <h1>BUILD YOUR BODY.<br><span class="accent">BUILD YOUR CONFIDENCE.</span></h1>
+        <p class="hero-text">
+          Premium equipment, world-class trainers and a community that pushes you further.
+          Start your transformation today and become the strongest version of yourself.
+        </p>
+        <div class="hero-buttons">
+          <a href="#membership" class="btn btn-primary">Get Started</a>
+          <a href="#programs" class="btn btn-outline">Explore Programs</a>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- ============ 3. ABOUT US ============ -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=900&q=80"
+               alt="Dumbbells lined up on a rack in the FITZONE gym" loading="lazy">
+          <div class="about-badge">
+            <strong>10+</strong>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="eyebrow">About Us</p>
+          <h2 class="section-title">More Than a Gym. <span class="accent">A Lifestyle.</span></h2>
+          <p>
+            FITZONE was founded with one mission: to make elite fitness accessible to everyone.
+            Our 20,000 sq. ft. facility combines state-of-the-art machines, functional training zones,
+            and a motivating atmosphere designed to help you reach your goals faster.
+          </p>
+          <p>
+            Whether you are lifting your first weight or training for competition, our certified coaches
+            build personalised plans around your body, schedule and ambitions.
+          </p>
+
+          <!-- Statistics -->
+          <div class="stats">
+            <div class="stat">
+              <h3>25+</h3>
+              <p>Expert Trainers</p>
+            </div>
+            <div class="stat">
+              <h3>40+</h3>
+              <p>Workout Programs</p>
+            </div>
+            <div class="stat">
+              <h3>5K+</h3>
+              <p>Happy Members</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. WORKOUT PROGRAMS ============ -->
+    <section class="section section-dark" id="programs">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Our Programs</p>
+          <h2 class="section-title">Workouts Built For <span class="accent">Every Goal</span></h2>
+          <p class="section-subtitle">Choose a program that matches your goals, then let our coaches take you the rest of the way.</p>
+        </header>
+
+        <div class="grid grid-4">
+
+          <article class="card program-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80"
+                   alt="Athlete performing strength training with weights" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Strength Training</h3>
+              <p>Build raw power and lean muscle with progressive barbell and dumbbell programs.</p>
+              <a href="#contact" class="link-arrow">Learn More</a>
+            </div>
+          </article>
+
+          <article class="card program-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80"
+                   alt="Person doing a cardio workout in the gym" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Cardio Training</h3>
+              <p>Boost endurance, torch calories and strengthen your heart with guided cardio sessions.</p>
+              <a href="#contact" class="link-arrow">Learn More</a>
+            </div>
+          </article>
+
+          <article class="card program-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80"
+                   alt="Woman practising yoga and flexibility poses" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Yoga &amp; Flexibility</h3>
+              <p>Improve mobility, balance and mental focus with calming yoga and stretching classes.</p>
+              <a href="#contact" class="link-arrow">Learn More</a>
+            </div>
+          </article>
+
+          <article class="card program-card">
+            <div class="card-img">
+              <img src="https://images.unsplash.com/photo-1549576490-b0b4831ef60a?auto=format&fit=crop&w=700&q=80"
+                   alt="High intensity interval training in a group class" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>HIIT Workouts</h3>
+              <p>Short, explosive interval circuits that maximise fat burn in minimum time.</p>
+              <a href="#contact" class="link-arrow">Learn More</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. EXPERT TRAINERS ============ -->
+    <section class="section" id="trainers">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Our Team</p>
+          <h2 class="section-title">Meet Our <span class="accent">Expert Trainers</span></h2>
+          <p class="section-subtitle">Certified professionals who live and breathe fitness – ready to guide you every rep of the way.</p>
+        </header>
+
+        <div class="grid grid-4">
+
+          <article class="card trainer-card">
+            <div class="card-img trainer-img">
+              <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=700&q=80"
+                   alt="Portrait of trainer Marcus Reed" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Marcus Reed</h3>
+              <p class="specialty">Strength &amp; Conditioning</p>
+              <p class="experience">12 Years Experience</p>
+            </div>
+          </article>
+
+          <article class="card trainer-card">
+            <div class="card-img trainer-img">
+              <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80"
+                   alt="Portrait of trainer Sophia Lane" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Sophia Lane</h3>
+              <p class="specialty">HIIT &amp; Fat Loss</p>
+              <p class="experience">8 Years Experience</p>
+            </div>
+          </article>
+
+          <article class="card trainer-card">
+            <div class="card-img trainer-img">
+              <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=700&q=80"
+                   alt="Portrait of trainer Daniel Cruz" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Daniel Cruz</h3>
+              <p class="specialty">Bodybuilding &amp; Nutrition</p>
+              <p class="experience">10 Years Experience</p>
+            </div>
+          </article>
+
+          <article class="card trainer-card">
+            <div class="card-img trainer-img">
+              <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80"
+                   alt="Portrait of trainer Aria Patel" loading="lazy">
+            </div>
+            <div class="card-body">
+              <h3>Aria Patel</h3>
+              <p class="specialty">Yoga &amp; Mobility</p>
+              <p class="experience">9 Years Experience</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. MEMBERSHIP PLANS ============ -->
+    <section class="section section-dark" id="membership">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Membership</p>
+          <h2 class="section-title">Choose Your <span class="accent">Plan</span></h2>
+          <p class="section-subtitle">Flexible pricing with no hidden fees. Upgrade, pause or cancel anytime.</p>
+        </header>
+
+        <div class="grid grid-3 pricing-grid">
+
+          <!-- Basic -->
+          <article class="card price-card">
+            <h3>Basic</h3>
+            <p class="price"><span class="currency">$</span>29<span class="period">/month</span></p>
+            <ul class="features">
+              <li>Gym floor access</li>
+              <li>Locker room &amp; showers</li>
+              <li>2 group classes / month</li>
+              <li>Fitness assessment</li>
+              <li class="off">Personal trainer</li>
+              <li class="off">Nutrition plan</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Join Now</a>
+          </article>
+
+          <!-- Premium (featured) -->
+          <article class="card price-card featured">
+            <span class="ribbon">Most Popular</span>
+            <h3>Premium</h3>
+            <p class="price"><span class="currency">$</span>59<span class="period">/month</span></p>
+            <ul class="features">
+              <li>Everything in Basic</li>
+              <li>Unlimited group classes</li>
+              <li>4 personal training sessions</li>
+              <li>Custom workout plan</li>
+              <li>Sauna &amp; steam room</li>
+              <li class="off">Nutrition plan</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-block">Join Now</a>
+          </article>
+
+          <!-- Professional -->
+          <article class="card price-card">
+            <h3>Professional</h3>
+            <p class="price"><span class="currency">$</span>99<span class="period">/month</span></p>
+            <ul class="features">
+              <li>Everything in Premium</li>
+              <li>Unlimited personal training</li>
+              <li>Personalised nutrition plan</li>
+              <li>Body composition analysis</li>
+              <li>Recovery &amp; massage access</li>
+              <li>Guest passes (2 / month)</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline btn-block">Join Now</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 7. TESTIMONIALS ============ -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Testimonials</p>
+          <h2 class="section-title">Real People. <span class="accent">Real Results.</span></h2>
+          <p class="section-subtitle">Hear from members who transformed their lives at FITZONE.</p>
+        </header>
+
+        <div class="grid grid-3">
+
+          <figure class="card testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "I lost 18 kg in six months. The trainers are incredibly supportive and the programs actually work. Best decision I've ever made."
+            </blockquote>
+            <figcaption class="customer">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Portrait of James Carter" loading="lazy">
+              <div>
+                <strong>James Carter</strong>
+                <span>Member for 2 years</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "The atmosphere is unbeatable. Clean, modern equipment and classes that keep me motivated every single week."
+            </blockquote>
+            <figcaption class="customer">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Portrait of Emily Johnson" loading="lazy">
+              <div>
+                <strong>Emily Johnson</strong>
+                <span>Member for 1 year</span>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure class="card testimonial">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>
+              "My personal trainer built a plan around my schedule. I'm stronger, more confident and full of energy."
+            </blockquote>
+            <figcaption class="customer">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Portrait of Rahul Mehta" loading="lazy">
+              <div>
+                <strong>Rahul Mehta</strong>
+                <span>Member for 3 years</span>
+              </div>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. CONTACT ============ -->
+    <section class="section section-dark" id="contact">
+      <div class="container">
+        <header class="section-header">
+          <p class="eyebrow">Contact Us</p>
+          <h2 class="section-title">Let's Start Your <span class="accent">Journey</span></h2>
+          <p class="section-subtitle">Questions about memberships or programs? Send us a message and we'll reply within 24 hours.</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Contact details -->
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <ul class="info-list">
+              <li><strong>Address</strong><span>123 Fitness Avenue, Downtown, City 400001</span></li>
+              <li><strong>Phone</strong><span><a href="tel:+1234567890">+1 (234) 567-890</a></span></li>
+              <li><strong>Email</strong><span><a href="mailto:hello@fitzone.com">hello@fitzone.com</a></span></li>
+              <li><strong>Hours</strong><span>Mon – Sat: 5:00 AM – 11:00 PM<br>Sunday: 7:00 AM – 9:00 PM</span></li>
+            </ul>
+
+            <div class="social">
+              <a href="#" aria-label="Facebook"><svg class="icon"><use href="#ic-facebook"/></svg></a>
+              <a href="#" aria-label="Instagram"><svg class="icon"><use href="#ic-instagram"/></svg></a>
+              <a href="#" aria-label="Twitter"><svg class="icon"><use href="#ic-twitter"/></svg></a>
+              <a href="#" aria-label="YouTube"><svg class="icon"><use href="#ic-youtube"/></svg></a>
+            </div>
+          </div>
+
+          <!-- Contact form (front-end only; connect to a backend or form service to receive messages) -->
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="How can we help you?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit Message</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 9. FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo">FIT<span>ZONE</span></a>
+        <p>Transform Your Body, Transform Your Life. Premium training, expert coaching and a community that never lets you quit.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><svg class="icon"><use href="#ic-facebook"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="icon"><use href="#ic-instagram"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg class="icon"><use href="#ic-twitter"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="icon"><use href="#ic-youtube"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer-links" aria-label="Quick links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#membership">Membership</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-links">
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon – Sat: 5 AM – 11 PM</li>
+          <li>Sunday: 7 AM – 9 PM</li>
+          <li><a href="mailto:hello@fitzone.com">hello@fitzone.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FITZONE. All rights reserved. Designed as a college portfolio project.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
